@@ -16,6 +16,7 @@ gem 'rest-client'
 gem 'stripe'
 gem "paperclip", "~> 4.2"
 gem 'remotipart', '~> 1.2'
+gem 'bootstrap_form'
 
 group :development do
   gem 'better_errors'
