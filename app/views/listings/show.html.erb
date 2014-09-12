@@ -1,5 +1,13 @@
 <h1><%= @listing.name %></h1>
 
+<h2>Photos</h2>
+
+<%= link_to "Add a Photo", new_listing_photo_path(@listing), id: "add-photo", remote: true %>
+
+<div class="row photos">
+  <%= render @listing.photos %>
+</div>
+
 <h2>Address</h2>
   <ul>
     <li><%= @listing.street %></li>
