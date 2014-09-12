@@ -1,0 +1,4 @@
+<div>
+  <p><%= review.content %></p>
+  <p>Posted by <%= User.find(review.user_id).email %> on <%= review.created_at.strftime("%B %-d, %Y") %></p>
+</div>

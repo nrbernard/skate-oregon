@@ -14,6 +14,7 @@ class ListingsController < ApplicationController
 
   def show
     @listing = Listing.find(params[:id])
+    @reviews = @listing.reviews.order("created_at DESC")
   end
 
 private

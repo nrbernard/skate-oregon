@@ -1,0 +1,8 @@
+<%= form_for [@listing, @review], html: {class: "form", id: "new-review"}, remote: true do |f| %>
+  <div class="form-group">
+    <%= f.label :content %>
+    <%= f.text_field :content, class: "form-control" %>
+  </div>
+
+  <%= f.submit class: "btn btn-primary" %>
+<% end %>
