@@ -7,3 +7,11 @@
     <li><%= @listing.state %></li>
     <li><%= @listing.zip %></li>
   </ul>
+
+<h2>Reviews</h2>
+
+<%= link_to "Add a Review", new_listing_review_path(@listing), id: "add-review", remote: true %>
+
+<div class="reviews">
+  <%= render @reviews %>
+</div>
