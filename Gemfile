@@ -15,6 +15,7 @@ gem 'devise'
 gem 'rest-client'
 gem 'stripe'
 gem "paperclip", "~> 4.2"
+gem 'remotipart', '~> 1.2'
 
 group :development do
   gem 'better_errors'
