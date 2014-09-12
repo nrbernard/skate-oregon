@@ -1,4 +1,5 @@
 <div class="photo-form">
+  <%= render 'layouts/errors', object: @photo %>
   <h3>Add a photo of <%= @listing.name %>:</h3>
   <%= form_for [@listing, @photo], html: {:multipart => true, class: "form", id: "new-photo"}, remote: true do |f| %>
     <div class="form-group">
