@@ -1,8 +1,5 @@
-<%= form_for [@listing, @review], html: {class: "form", id: "new-review"}, remote: true do |f| %>
-  <div class="form-group">
-    <%= f.label :content %>
-    <%= f.text_field :content, class: "form-control" %>
-  </div>
+<%= bootstrap_form_for [@listing, @review], html: {class: "form", id: "new-review"}, remote: true do |f| %>
+  <%= f.text_field :content %>
 
-  <%= f.submit class: "btn btn-primary" %>
+  <%= f.primary %>
 <% end %>
