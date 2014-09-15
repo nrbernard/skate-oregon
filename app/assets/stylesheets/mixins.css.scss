@@ -1,0 +1,13 @@
+@mixin border-bottom($color) {
+  border-bottom: 8px solid $color;
+}
+
+@mixin concrete-background {
+  background: url(https://s3-us-west-2.amazonaws.com/skateoregon/static/bg.png);
+}
+
+@mixin content-box {
+  @include border-radius(5px);
+  @include box-shadow(black 5px 5px 10px);
+  @include concrete-background;
+}

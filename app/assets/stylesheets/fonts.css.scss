@@ -3,3 +3,18 @@
 body, h1, h2, h3 {
   font-family: 'Montserrat', sans-serif;
 }
+
+a.title {
+  text-align: center;
+  @include adjust-font-size-to(22px);
+  @media (min-width: $screen-xs-min) {
+    @include adjust-font-size-to(40px);
+    text-align: left;
+  }
+}
+
+span.glyphicon {
+  padding: 0 .5em;
+}
+
+
