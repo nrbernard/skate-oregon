@@ -1,1 +1,9 @@
-<li><%= link_to listing.name, listing_path(listing) %></li>
+<div class="park">
+  <div class="park-content">
+    <h3><%= link_to listing.name, listing_path(listing), class: "park-title" %></h3>
+    <%= link_to listing_path(listing), class: "thumbnail" do %>
+      <%= image_tag listing.photos.first.photo.url %>
+    <% end %>
+  </div>
+</div>
+

@@ -13,11 +13,19 @@
  *= require_self
  *= require rails_bootstrap_forms
  */
+@import "compass";
+
+$brand-primary: #FFBC3E;
+$brand-info: #269D94;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+
+@import "colors";
+@import "mixins";
 @import "fonts";
 @import "layouts";
+@import "header";
 
 
