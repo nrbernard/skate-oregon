@@ -1,9 +1,4 @@
-<div class="park">
-  <div class="park-content">
-    <h3><%= link_to listing.name, listing_path(listing), class: "park-title" %></h3>
-    <%= link_to listing_path(listing), class: "thumbnail" do %>
-      <%= image_tag listing.photos.first.photo.url %>
-    <% end %>
-  </div>
-</div>
-
+<%= link_to listing_path(listing), class: "list-group-item" do %>
+  <h3 class="list-group-item-heading"><%= listing.name %></h3>
+  <p class="list-group-item-text"><%= listing.description %></p>
+<% end %>

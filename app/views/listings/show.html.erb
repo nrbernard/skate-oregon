@@ -7,10 +7,17 @@
       <%= render @listing.photos %>
     </div>
 
+    <%= link_to new_listing_photo_path(@listing), id: "add-photo", class: "btn btn-primary btn-block", remote: true do %>
+      <span class="glyphicon glyphicon-camera"></span>Add a Photo
+    <% end %>
+
     <h2>Reviews</h2>
     <div class="reviews">
       <%= render @reviews %>
     </div>
+      <%= link_to new_listing_review_path(@listing), id: "add-review", class: "btn btn-info btn-block", remote: true do %>
+      <span class="glyphicon glyphicon-pencil"></span>Add a Review
+    <% end %>
   </div>
 
   <div class="secondary">
@@ -21,13 +28,5 @@
       <li><%= @listing.state %></li>
       <li><%= @listing.zip %></li>
     </ul>
-
-    <%= link_to new_listing_photo_path(@listing), id: "add-photo", class: "btn btn-primary btn-block", remote: true do %>
-      <span class="glyphicon glyphicon-camera"></span>Add a Photo
-    <% end %>
-
-    <%= link_to new_listing_review_path(@listing), id: "add-review", class: "btn btn-info btn-block", remote: true do %>
-      <span class="glyphicon glyphicon-pencil"></span>Add a Review
-    <% end %>
   </div>
 </div>
