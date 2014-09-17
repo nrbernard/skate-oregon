@@ -21,8 +21,21 @@ class ListingsController < ApplicationController
     @reviews = @listing.reviews.order("created_at DESC")
   end
 
+  def edit
+    @listing = Listing.find(params[:id])
+  end
+
+  def update
+    @listing = Listing.find(params[:id])
+    if @listing.update(listing_params)
+      redirect_to listing_path(@listing), notice: "Park updated!"
+    else
+      render 'edit'
+    end
+  end
+
 private
   def listing_params
-    params.require(:listing).permit(:name, :street, :city, :state, :zip)
+    params.require(:listing).permit(:name, :description, :street, :city, :state, :zip)
   end
 end
