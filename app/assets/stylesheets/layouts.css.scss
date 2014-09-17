@@ -4,7 +4,6 @@ body {
 
 .container {
   max-width: 55em;
-  @include padding-trailer(2);
 }
 
 .form {
@@ -31,26 +30,7 @@ body {
   @include content-box;
 }
 
-.address, .parks-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  @include padding-trailer(1);
-}
-
-.parks-list {
-  li {
-    margin: 0 .5em;
-    @include padding-trailer(1);
-    .park-title {
-      @include adjust-font-size-to(28px);
-      text-align: center;
-    }
-  }
-}
-
 .park {
-  @include make-sm-column(4);
   @include trailer(1);
   .park-content {
     @include content-box;
@@ -64,4 +44,8 @@ body {
 
 .secondary {
   @include make-md-column(4);
+}
+
+.primary, .secondary {
+  @include padding-trailer(1);
 }

@@ -11,6 +11,7 @@ header {
   background: #2f2f2f;
   color: rgb(255, 255, 255);
   @include padding-leader(1);
+  @include padding-trailer(1);
   @include trailer(1);
   @include single-box-shadow;
   .login {
