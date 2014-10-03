@@ -1,4 +1,6 @@
 class ListingsController < ApplicationController
+  load_and_authorize_resource param_method: :listing_params
+
   def index
     @listings = Listing.all
   end
