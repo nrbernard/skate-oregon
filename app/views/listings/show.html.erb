@@ -13,7 +13,7 @@
     <% end %>
 
     <h2>Reviews</h2>
-    <div class="reviews">
+    <div class="reviews list-group">
       <%= render @reviews %>
     </div>
       <%= link_to new_listing_review_path(@listing), id: "add-review", class: "btn btn-primary btn-block", remote: true do %>
