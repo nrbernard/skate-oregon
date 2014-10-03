@@ -10,9 +10,9 @@ class Listing < ActiveRecord::Base
 
   has_attached_file :photo, :default_url => "/images/:style/default.png"
 
-  after_create :add_default_photo
+  # after_create :add_default_photo
 
-  def add_default_photo
-    self.photos.create(photo: "http://placehold.it/200")
-  end
+  # def add_default_photo
+  #   self.photos.create(photo: "http://placehold.it/200")
+  # end
 end
