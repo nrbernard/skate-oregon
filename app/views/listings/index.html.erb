@@ -1,3 +1,7 @@
+<% if can? :create, @listing %>
+  <%= link_to "Add a Park", new_listing_path(@listing), class: "btn btn-danger btn-block" %>
+<% end %>
+
 <div class="park-listing">
   <%= render @listings %>
 </div>
