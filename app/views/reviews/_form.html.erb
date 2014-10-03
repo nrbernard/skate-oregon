@@ -1,5 +1,4 @@
 <%= bootstrap_form_for [@listing, @review], html: {class: "form", id: "new-review"}, remote: true do |f| %>
-  <%= f.text_field :content %>
-
+  <%= f.text_field :content, label: "Add your review of #{@listing.name}:" %>
   <%= f.primary %>
 <% end %>
