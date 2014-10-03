@@ -5,3 +5,24 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Listing.create( title: 'Burnside Skatepark',
+                street: '100 SE Ankeny',
+                city: 'Portland',
+                state: 'Oregon',
+                zip: '97211',
+                description: 'Legendary park.')
+
+Listing.create( title: 'Newberg Skatepark',
+                street: '100 SE Ankeny',
+                city: 'Newberg',
+                state: 'Oregon',
+                zip: '97211',
+                description: 'Legendary park.')
+
+Listing.create( title: 'Ed Benedict Skate Plaza',
+                street: '92nd & SE Powell',
+                city: 'Portland',
+                state: 'Oregon',
+                zip: '97211',
+                description: 'Street skating plaza.')
