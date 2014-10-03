@@ -1,13 +1,12 @@
 <div class="row park">
-  <div class="park-content">
-    <div class="col-xs-3">
-      <%= image_tag listing.photos.first.photo.url, class: "img-responsive" %>
-    </div>
-    <div class="col-xs-9">
-      <%= link_to listing_path(listing), class: "park-title" do %>
-        <h3 class="list-group-item-heading"><%= listing.name %></h3>
-        <p class="list-group-item-text"><%= listing.description %></p>
-      <% end %>
-    </div>
+  <div class="col-xs-3">
+    <%= image_tag listing.photos.first.photo.url, class: "img-responsive" %>
+  </div>
+  <div class="col-xs-9">
+    <%= link_to listing_path(listing), class: "park-title" do %>
+      <h3><%= listing.name %></h3>
+      <p><%= listing.city %>, <%= listing.city %></p>
+      <p><%= listing.description %></p>
+    <% end %>
   </div>
 </div>

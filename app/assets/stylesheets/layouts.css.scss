@@ -6,7 +6,7 @@ body {
   max-width: 55em;
 }
 
-.form {
+.user-form {
   @include make-lg-column(3);
   @include make-lg-column-push(4.5);
   @include make-md-column(4);
