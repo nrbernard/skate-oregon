@@ -17,4 +17,4 @@
 
 # Ignore all uploaded images
 public/system/photos/photos/
-app/assets/images
+app/assets/images/
