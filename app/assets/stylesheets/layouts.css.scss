@@ -45,3 +45,7 @@ body {
 .primary, .secondary {
   @include padding-trailer(1);
 }
+
+.add-park {
+  @include trailer(1);
+}
