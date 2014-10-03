@@ -19,6 +19,7 @@ gem "paperclip", "~> 4.2"
 gem 'remotipart', '~> 1.2'
 gem 'bootstrap_form'
 gem 'aws-sdk'
+gem 'cancancan', '~> 1.9'
 
 group :development do
   gem 'better_errors'
